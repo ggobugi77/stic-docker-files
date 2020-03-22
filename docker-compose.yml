@@ -1,0 +1,12 @@
+version: '3.7'
+services:
+  sticpay:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    restart: 'always' 
+    container_name: sticpay_test
+    ports:
+      - 80:80
+#    volumes:
+#      - ./var:/var
